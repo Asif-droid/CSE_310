@@ -1,0 +1,205 @@
+new scopetable with id# 1
+S
+new scopetable with id# 1.1
+I a a
+inserted at scope table# 1.1position 1,0
+S
+new scopetable with id# 1.1.1
+I b b
+inserted at scope table# 1.1.1position 2,0
+S
+new scopetable with id# 1.1.1.1
+I b b
+inserted at scope table# 1.1.1.1position 2,0
+I c c
+inserted at scope table# 1.1.1.1position 3,0
+P A
+scopetable# 1.1.1.1
+0-->
+1-->
+2--><b : b>
+3--><c : c>
+4-->
+5-->
+6-->
+7-->
+
+
+scopetable# 1.1.1
+0-->
+1-->
+2--><b : b>
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+scopetable# 1.1
+0-->
+1--><a : a>
+2-->
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+L b
+b found in scope table# 1.1.1.1position 2,0
+L a
+a found in scope table# 1.1position 1,0
+E
+scope with id# 1.1.1.1 removed
+S
+new scopetable with id# 1.1.1.2
+I d d
+inserted at scope table# 1.1.1.2position 4,0
+P A
+scopetable# 1.1.1.2
+0-->
+1-->
+2-->
+3-->
+4--><d : d>
+5-->
+6-->
+7-->
+
+
+scopetable# 1.1.1
+0-->
+1-->
+2--><b : b>
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+scopetable# 1.1
+0-->
+1--><a : a>
+2-->
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+L b
+b found in scope table# 1.1.1position 2,0
+E
+scope with id# 1.1.1.2 removed
+E
+scope with id# 1.1.1 removed
+S
+new scopetable with id# 1.1.2
+I d d
+inserted at scope table# 1.1.2position 4,0
+L b
+not found
+S
+new scopetable with id# 1.1.2.1
+E
+scope with id# 1.1.2.1 removed
+S
+new scopetable with id# 1.1.2.2
+I e e
+inserted at scope table# 1.1.2.2position 5,0
+P A
+scopetable# 1.1.2.2
+0-->
+1-->
+2-->
+3-->
+4-->
+5--><e : e>
+6-->
+7-->
+
+
+scopetable# 1.1.2
+0-->
+1-->
+2-->
+3-->
+4--><d : d>
+5-->
+6-->
+7-->
+
+
+scopetable# 1.1
+0-->
+1--><a : a>
+2-->
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6-->
+7-->
+
+
+L d
+d found in scope table# 1.1.2position 4,0
+L a
+a found in scope table# 1.1position 1,0
+E
+scope with id# 1.1.2.2 removed
+E
+scope with id# 1.1.2 removed
+E
+scope with id# 1.1 removed
+I f f
+inserted at scope table# 1position 6,0
+P A
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><f : f>
+7-->
+
+
+break

@@ -1,0 +1,46 @@
+line_no: 20 Error: Multiple declaration of a in parameter
+
+line_no: 24 Error: Return type mismatch with function declaration in function foo3
+
+line_no: 28 Error:  Multiple declaration of z
+
+line_no: 32 Error:Total number of arguments mismatch with declaration in function var
+
+line_no: 42 Error: Multiple declaration of e
+
+line_no: 42 Error: Variable type cannot be void
+
+line_no: 43 Error: Multiple declaration of a
+
+line_no: 43 Error: Multiple declaration of c
+
+line_no: 45 Error: 1th argument mismatch in function func
+
+line_no: 48 Error: Type mismatch, c is an array
+
+line_no: 48 Error: 2th argument mismatch in function correct_foo
+
+line_no: 49 Error: Total number of arguments mismatch in function correct_foo
+ 
+line_no: 51 Error:  Undeclared variable k
+ 
+line_no: 52 Error: bnot an array
+
+line_no: 53 Error:cIndex not integer 
+
+line_no: 54 Error:Void function used in expression
+ 
+line_no: 57 Error:Void function used in expression
+ 
+line_no: 58 Error: type mismatch
+
+line_no: 59 Error:Modulus by Zero
+
+line_no: 60 Error:Non-Integer operand on modulus operator
+
+line_no: 60 Error: type mismatch
+
+line_no: 62 Error: Undeclared function foo5
+
+line_no: 67 Error:Undeclared variable h
+

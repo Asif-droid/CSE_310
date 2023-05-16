@@ -1,0 +1,16 @@
+scopetable# 1
+6--><myvector : vector>
+
+myvector already exsists in the scope
+scopetable# 1
+0--><hello : vector>
+6--><myvector : vector>
+
+scopetable# 1
+6--><myvector : vector>
+
+myvector already exsists in the scope
+scopetable# 1
+0--><hello : vector>
+6--><myvector : vector>
+

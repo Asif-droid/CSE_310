@@ -1,0 +1,1172 @@
+line no 1: type_specifier :  INT
+
+int
+
+line no 3: type_specifier :  INT
+
+int
+
+line no 3: declaration_list : ID
+
+i
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j,k
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j,k,ll
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j,k,ll,m
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j,k,ll,m,n
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j,k,ll,m,n,o
+
+line no 3: declaration_list : declaration_list COMMA ID
+
+i,j,k,ll,m,n,o,p
+
+line no 3: var_declaration : type_specifier declaration_list SEMICOLON
+
+int i,j,k,ll,m,n,o,p;
+
+line no 3: statement : var_declaration
+
+int i,j,k,ll,m,n,o,p;
+
+line no 3: statements : statement
+
+int i,j,k,ll,m,n,o,p;
+
+
+line no: 5 variable : ID
+
+i
+
+line no: 5 factor : CONST_INT
+
+1
+
+line no: 5 unary_expression : factor 
+
+1
+
+line no: 5 term :	unary_expression
+
+1
+
+line no: 5 simple_expression : term
+
+1
+
+line no: 5 rel_expression : simple_expression
+
+1
+
+line no: 5 logic_expression : rel_expression
+
+1
+
+line no: 5 expression : variable ASSIGNOP logic_expression
+
+i=1
+
+line no: 5 expression_statement : expression SEMICOLON 
+
+i=1;
+
+line no 5: statement : expression_statement
+
+i=1;
+
+line no 5: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+
+
+line no 6: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(i);
+
+line no 6: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+
+
+line no: 7 variable : ID
+
+j
+
+line no: 7 factor : CONST_INT
+
+5
+
+line no: 7 unary_expression : factor 
+
+5
+
+line no: 7 term :	unary_expression
+
+5
+
+line no: 7 simple_expression : term
+
+5
+
+line no: 7 factor : CONST_INT
+
+8
+
+line no: 7 unary_expression : factor 
+
+8
+
+line no: 7 term :	unary_expression
+
+8
+
+line no: 7 simple_expression : simple_expression ADDOP term
+
+5+8
+
+line no: 7 rel_expression : simple_expression
+
+5+8
+
+line no: 7 logic_expression : rel_expression
+
+5+8
+
+line no: 7 expression : variable ASSIGNOP logic_expression
+
+j=5+8
+
+line no: 7 expression_statement : expression SEMICOLON 
+
+j=5+8;
+
+line no 7: statement : expression_statement
+
+j=5+8;
+
+line no 7: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+
+
+line no 8: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(j);
+
+line no 8: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+
+
+line no: 9 variable : ID
+
+k
+
+line no: 9 variable : ID
+
+i
+
+line no: 9 factor  : variable 
+
+i
+
+line no: 9 unary_expression : factor 
+
+i
+
+line no: 9 term :	unary_expression
+
+i
+
+line no: 9 simple_expression : term
+
+i
+
+line no: 9 factor : CONST_INT
+
+2
+
+line no: 9 unary_expression : factor 
+
+2
+
+line no: 9 term :	unary_expression
+
+2
+
+line no: 9 variable : ID
+
+j
+
+line no: 9 factor  : variable 
+
+j
+
+line no: 9 unary_expression : factor 
+
+j
+
+line no: 9 term :  term MULOP unary_expression
+
+2*j
+
+line no: 9 simple_expression : simple_expression ADDOP term
+
+i+2*j
+
+line no: 9 rel_expression : simple_expression
+
+i+2*j
+
+line no: 9 logic_expression : rel_expression
+
+i+2*j
+
+line no: 9 expression : variable ASSIGNOP logic_expression
+
+k=i+2*j
+
+line no: 9 expression_statement : expression SEMICOLON 
+
+k=i+2*j;
+
+line no 9: statement : expression_statement
+
+k=i+2*j;
+
+line no 9: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+
+
+line no 10: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(k);
+
+line no 10: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+
+
+line no: 12 variable : ID
+
+m
+
+line no: 12 variable : ID
+
+k
+
+line no: 12 factor  : variable 
+
+k
+
+line no: 12 unary_expression : factor 
+
+k
+
+line no: 12 term :	unary_expression
+
+k
+
+line no: 12 factor : CONST_INT
+
+9
+
+line no: 12 unary_expression : factor 
+
+9
+
+line no: 12 term :  term MULOP unary_expression
+
+k%9
+
+line no: 12 simple_expression : term
+
+k%9
+
+line no: 12 rel_expression : simple_expression
+
+k%9
+
+line no: 12 logic_expression : rel_expression
+
+k%9
+
+line no: 12 expression : variable ASSIGNOP logic_expression
+
+m=k%9
+
+line no: 12 expression_statement : expression SEMICOLON 
+
+m=k%9;
+
+line no 12: statement : expression_statement
+
+m=k%9;
+
+line no 12: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+
+
+line no 13: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(m);
+
+line no 13: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+
+
+line no: 15 variable : ID
+
+n
+
+line no: 15 variable : ID
+
+m
+
+line no: 15 factor  : variable 
+
+m
+
+line no: 15 unary_expression : factor 
+
+m
+
+line no: 15 term :	unary_expression
+
+m
+
+line no: 15 simple_expression : term
+
+m
+
+line no: 15 variable : ID
+
+ll
+
+line no: 15 factor  : variable 
+
+ll
+
+line no: 15 unary_expression : factor 
+
+ll
+
+line no: 15 term :	unary_expression
+
+ll
+
+line no: 15 simple_expression : term
+
+ll
+
+line no: 15 rel_expression : simple_expression RELOP simple_expression
+
+m<=ll
+
+line no: 15 logic_expression : rel_expression
+
+m<=ll
+
+line no: 15 expression : variable ASSIGNOP logic_expression
+
+n=m<=ll
+
+line no: 15 expression_statement : expression SEMICOLON 
+
+n=m<=ll;
+
+line no 15: statement : expression_statement
+
+n=m<=ll;
+
+line no 15: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+
+
+line no 16: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(n);
+
+line no 16: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+
+
+line no: 18 variable : ID
+
+o
+
+line no: 18 variable : ID
+
+i
+
+line no: 18 factor  : variable 
+
+i
+
+line no: 18 unary_expression : factor 
+
+i
+
+line no: 18 term :	unary_expression
+
+i
+
+line no: 18 simple_expression : term
+
+i
+
+line no: 18 variable : ID
+
+j
+
+line no: 18 factor  : variable 
+
+j
+
+line no: 18 unary_expression : factor 
+
+j
+
+line no: 18 term :	unary_expression
+
+j
+
+line no: 18 simple_expression : term
+
+j
+
+line no: 18 rel_expression : simple_expression RELOP simple_expression
+
+i!=j
+
+line no: 18 logic_expression : rel_expression
+
+i!=j
+
+line no: 18 expression : variable ASSIGNOP logic_expression
+
+o=i!=j
+
+line no: 18 expression_statement : expression SEMICOLON 
+
+o=i!=j;
+
+line no 18: statement : expression_statement
+
+o=i!=j;
+
+line no 18: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+
+
+line no 19: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(o);
+
+line no 19: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+
+
+line no: 21 variable : ID
+
+p
+
+line no: 21 variable : ID
+
+n
+
+line no: 21 factor  : variable 
+
+n
+
+line no: 21 unary_expression : factor 
+
+n
+
+line no: 21 term :	unary_expression
+
+n
+
+line no: 21 simple_expression : term
+
+n
+
+line no: 21 rel_expression : simple_expression
+
+n
+
+line no: 21 variable : ID
+
+o
+
+line no: 21 factor  : variable 
+
+o
+
+line no: 21 unary_expression : factor 
+
+o
+
+line no: 21 term :	unary_expression
+
+o
+
+line no: 21 simple_expression : term
+
+o
+
+line no: 21 rel_expression : simple_expression
+
+o
+
+line no: 21 logic_expression : rel_expression LOGICOP rel_expression
+
+n||o
+
+line no: 21 expression : variable ASSIGNOP logic_expression
+
+p=n||o
+
+line no: 21 expression_statement : expression SEMICOLON 
+
+p=n||o;
+
+line no 21: statement : expression_statement
+
+p=n||o;
+
+line no 21: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+
+
+line no 22: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(p);
+
+line no 22: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+
+
+line no: 24 variable : ID
+
+p
+
+line no: 24 variable : ID
+
+n
+
+line no: 24 factor  : variable 
+
+n
+
+line no: 24 unary_expression : factor 
+
+n
+
+line no: 24 term :	unary_expression
+
+n
+
+line no: 24 simple_expression : term
+
+n
+
+line no: 24 rel_expression : simple_expression
+
+n
+
+line no: 24 variable : ID
+
+o
+
+line no: 24 factor  : variable 
+
+o
+
+line no: 24 unary_expression : factor 
+
+o
+
+line no: 24 term :	unary_expression
+
+o
+
+line no: 24 simple_expression : term
+
+o
+
+line no: 24 rel_expression : simple_expression
+
+o
+
+line no: 24 logic_expression : rel_expression LOGICOP rel_expression
+
+n&&o
+
+line no: 24 expression : variable ASSIGNOP logic_expression
+
+p=n&&o
+
+line no: 24 expression_statement : expression SEMICOLON 
+
+p=n&&o;
+
+line no 24: statement : expression_statement
+
+p=n&&o;
+
+line no 24: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+
+
+line no 25: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(p);
+
+line no 25: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+
+
+line no: 27 variable : ID
+
+p
+
+line no: 27 factor  : variable INCOP
+
+p++
+
+line no: 27 unary_expression : factor 
+
+p++
+
+line no: 27 term :	unary_expression
+
+p++
+
+line no: 27 simple_expression : term
+
+p++
+
+line no: 27 rel_expression : simple_expression
+
+p++
+
+line no: 27 logic_expression : rel_expression
+
+p++
+
+line no: 27 expression : logic_expression
+
+p++
+
+line no: 27 expression_statement : expression SEMICOLON 
+
+p++;
+
+line no 27: statement : expression_statement
+
+p++;
+
+line no 27: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+
+
+line no 28: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(p);
+
+line no 28: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+
+
+line no: 30 variable : ID
+
+k
+
+line no: 30 variable : ID
+
+p
+
+line no: 30 factor  : variable 
+
+p
+
+line no: 30 unary_expression : factor 
+
+p
+
+line no: 30 unary_expression : ADDOP unary_expression 
+
+-p
+
+line no: 30 term :	unary_expression
+
+-p
+
+line no: 30 simple_expression : term
+
+-p
+
+line no: 30 rel_expression : simple_expression
+
+-p
+
+line no: 30 logic_expression : rel_expression
+
+-p
+
+line no: 30 expression : variable ASSIGNOP logic_expression
+
+k=-p
+
+line no: 30 expression_statement : expression SEMICOLON 
+
+k=-p;
+
+line no 30: statement : expression_statement
+
+k=-p;
+
+line no 30: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+
+
+line no 31: statement : PRINTLN LPAREN ID RPAREN SEMICOLON
+
+println(k);
+
+line no 31: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+println(k);
+
+
+line no: 36 factor : CONST_INT
+
+0
+
+line no: 36 unary_expression : factor 
+
+0
+
+line no: 36 term :	unary_expression
+
+0
+
+line no: 36 simple_expression : term
+
+0
+
+line no: 36 rel_expression : simple_expression
+
+0
+
+line no: 36 logic_expression : rel_expression
+
+0
+
+line no: 36 expression : logic_expression
+
+0
+
+line no 36: statement : RETURN expression SEMICOLON
+
+return 0;
+
+line no 36: statements : statements statement
+
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+println(k);
+return 0;
+
+
+line no 37: compound_statement : LCURL statements RCURL
+
+{
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+println(k);
+return 0;
+}
+
+ScopeTable# 1.1
+6 -->  < ll , ID , var >
+15 -->  < i , ID , var >
+16 -->  < j , ID , var >
+17 -->  < k , ID , var >
+19 -->  < m , ID , var >
+20 -->  < n , ID , var >
+21 -->  < o , ID , var >
+22 -->  < p , ID , var >
+
+ScopeTable# 1
+1 -->  < main , ID , func >
+
+line no 37: func_definition : type_specifier ID LPAREN RPAREN compound_statement
+
+int main(){
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+println(k);
+return 0;
+}
+
+
+line no 37: unit : func_definition
+
+int main(){
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+println(k);
+return 0;
+}
+
+
+line no 37: program : unit 
+
+int main(){
+int i,j,k,ll,m,n,o,p;
+i=1;
+println(i);
+j=5+8;
+println(j);
+k=i+2*j;
+println(k);
+m=k%9;
+println(m);
+n=m<=ll;
+println(n);
+o=i!=j;
+println(o);
+p=n||o;
+println(p);
+p=n&&o;
+println(p);
+p++;
+println(p);
+k=-p;
+println(k);
+return 0;
+}
+
+
+Line 36: start : program
+
+ScopeTable# 1
+1 -->  < main , ID , func >
+
+Total lines: 36
+Total errors: 0

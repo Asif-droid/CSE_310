@@ -1,0 +1,259 @@
+new scopetable with id# 1
+I a a
+inserted at scope table# 1position 6,0
+S
+new scopetable with id# 1.1
+I h h
+inserted at scope table# 1.1position 6,0
+S
+new scopetable with id# 1.1.1
+I o o
+inserted at scope table# 1.1.1position 6,0
+P A
+scopetable# 1.1.1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><o, o>
+
+
+scopetable# 1.1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><h, h>
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+
+L oo found in scope table# 1.1.1position 6,0
+L aa found in scope table# 1position 6,0
+E
+scope with id# 1.1.1 removed
+S
+new scopetable with id# 1.1.2
+I foo FUNCTION
+inserted at scope table# 1.1.2position 4,0
+E
+scope with id# 1.1.2 removed
+S
+new scopetable with id# 1.1.3
+I i VAR
+inserted at scope table# 1.1.3position 0,0
+P A
+scopetable# 1.1.3
+0--><i, VAR>
+1-->
+2-->
+3-->
+4-->
+5-->
+6-->
+
+
+scopetable# 1.1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><h, h>
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+
+L foonot found
+L jnot found
+E
+scope with id# 1.1.3 removed
+E
+scope with id# 1.1 removed
+S
+new scopetable with id# 1.2
+I 5 NUMBER
+inserted at scope table# 1.2position 4,0
+P A
+scopetable# 1.2
+0-->
+1-->
+2-->
+3-->
+4--><5, NUMBER>
+5-->
+6-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+
+not found
+j not found
+not found
+i not found
+P A
+scopetable# 1.2
+0-->
+1-->
+2-->
+3-->
+4--><5, NUMBER>
+5-->
+6-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+
+S
+new scopetable with id# 1.2.1
+E
+scope with id# 1.2.1 removed
+S
+new scopetable with id# 1.2.2
+I <= RELOP
+inserted at scope table# 1.2.2position 6,0
+I == RELOP
+inserted at scope table# 1.2.2position 1,0
+P A
+scopetable# 1.2.2
+0-->
+1--><==, RELOP>
+2-->
+3-->
+4-->
+5-->
+6--><<=, RELOP>
+
+
+scopetable# 1.2
+0-->
+1-->
+2-->
+3-->
+4--><5, NUMBER>
+5-->
+6-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+
+I <= RELOP
+<= found in scope table# 1.2.2position 6,0
+already exsists in the scope
+I foo FUNCTION
+inserted at scope table# 1.2.2position 4,0
+== found in scope table# 1.2.2position 1,0
+deleted from scope table# 1.2.2position 1,0
+P A
+scopetable# 1.2.2
+0-->
+1-->
+2-->
+3-->
+4--><foo, FUNCTION>
+5-->
+6--><<=, RELOP>
+
+
+scopetable# 1.2
+0-->
+1-->
+2-->
+3-->
+4--><5, NUMBER>
+5-->
+6-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+
+E
+scope with id# 1.2.2 removed
+I t t
+inserted at scope table# 1.2position 4,1
+I k k
+inserted at scope table# 1.2position 2,0
+P C
+scopetable# 1.2
+0-->
+1-->
+2--><k, k>
+3-->
+4--><5, NUMBER><t, t>
+5-->
+6-->
+
+P A
+scopetable# 1.2
+0-->
+1-->
+2--><k, k>
+3-->
+4--><5, NUMBER><t, t>
+5-->
+6-->
+
+
+scopetable# 1
+0-->
+1-->
+2-->
+3-->
+4-->
+5-->
+6--><a, a>
+
+

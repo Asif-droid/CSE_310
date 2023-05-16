@@ -1,0 +1,137 @@
+Line no: 1 Token <INT> Lexeme int found
+Line no : 1 Token <ID> Lexeme main found
+scopetable# 1
+6--><main : ID>
+
+Line no: 1 Token <LPAREN> Lexeme ( found
+Line no: 1 Token <RPAREN> Lexeme ) found
+Line no: 1 Token <LCURL> Lexeme { found
+Line no: 2 Token <INT> Lexeme int found
+Line no : 2 Token <ID> Lexeme a found
+scopetable# 1.1
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 2 Token <COMMA> Lexeme , found
+Line no : 2 Token <ID> Lexeme b found
+scopetable# 1.1
+0--><b : ID>
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 2 Token <SEMICOLON> Lexeme ; found
+Line no : 3 Token <ID> Lexeme a found
+a already exsists in the scope
+Line no: 3 Token <ASSIGNOP> Lexeme = found
+Line no : 3 Token <ID> Lexeme a found
+a already exsists in the scope
+Line no: 3 Token <ADDOP> Lexeme + found
+Line no : 3Token <CONST_INT> Lexeme1 found
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 3 Token <SEMICOLON> Lexeme ; found
+Line no: 4 Token <CHAR> Lexeme char found
+Line no : 4 Token <ID> Lexeme ch found
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+1--><ch : ID>
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 4 Token <ASSIGNOP> Lexeme = found
+Line no : 4Token <CONST_CHAR> Lexeme'a' found
+ --><CONST_CHAR, a> 
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+1--><ch : ID>
+2--><'a' : CONST_CHAR>
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 4 Token <SEMICOLON> Lexeme ; found
+Line no : 5 Token <ID> Lexeme ch found
+ch already exsists in the scope
+Line no: 5 Token <ASSIGNOP> Lexeme = found
+Line no : 5Token <CONST_CHAR> Lexeme'\t' found
+ --><CONST_CHAR, 	> 
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+1--><ch : ID>
+2--><'a' : CONST_CHAR>
+5--><'\t' : CONST_CHAR>
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 5 Token <SEMICOLON> Lexeme ; found
+Line no: 6 Token <CHAR> Lexeme char found
+Line no : 6 Token <ID> Lexeme c found
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+1--><ch : ID><c : ID>
+2--><'a' : CONST_CHAR>
+5--><'\t' : CONST_CHAR>
+6--><a : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 6 Token <LTHIRD> Lexeme [ found
+Line no: 6 Token <RTHIRD> Lexeme ] found
+Line no: 6 Token <ASSIGNOP> Lexeme = found
+Line no : 6 Token <STRING> Lexeme "ab\td" found --><STRING, "ab	d"> 
+Line no: 6 Token <SEMICOLON> Lexeme ; found
+Line no : 7 Token <ID> Lexeme printf found
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+1--><ch : ID><c : ID>
+2--><'a' : CONST_CHAR>
+5--><'\t' : CONST_CHAR>
+6--><a : ID><printf : ID>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 7 Token <LPAREN> Lexeme ( found
+Line no : 7 Token <STRING> Lexeme "abc\
+def\
+ghi" found --><STRING, "abcdefghi"> 
+Line no: 9 Token <RPAREN> Lexeme ) found
+Line no: 9 Token <SEMICOLON> Lexeme ; found
+Line no : 10 Token <COMMENT> Lexeme // a comment found
+Line no : 11 Token <COMMENT> Lexeme /** another
+*** comment ***/ found
+Line no: 13 Token <RETURN> Lexeme return found
+Line no : 13Token <CONST_INT> Lexeme0 found
+scopetable# 1.1
+0--><b : ID><1 : CONST_INT>
+1--><ch : ID><c : ID>
+2--><'a' : CONST_CHAR>
+5--><'\t' : CONST_CHAR>
+6--><a : ID><printf : ID><0 : CONST_INT>
+
+scopetable# 1
+6--><main : ID>
+
+Line no: 13 Token <SEMICOLON> Lexeme ; found
+Line no: 14 Token <RCURL> Lexeme } found
+scopetable# 1
+6--><main : ID>
+
+
+Total lines: 14
+Total errors: 0
